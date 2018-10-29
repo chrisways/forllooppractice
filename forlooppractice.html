@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+			function createTable()
+			{
+		var content = "";
+			content = "<table border=1>";
+			content += "<tr>";
+				c = parseInt(no_of_cells.value);
+			/*for(i=1;i<=c;i++)
+				{
+					
+					content += "<td>"+i+"</td>";
+				}
+				*/
+				i = 1;
+				while(i<=c)
+					{
+						content += "<td>"+i+"</td>";
+						i++;
+					}
+			content += "</tr></table>";
+			
+			t.innerHTML = content;
+			}
+		</script> 
+		
+	</head>
+	<body>
+		<div id="t" >
+			
+			
+		</div>
+	<input type="text" id="no_of_cells" /><button onClick="createTable()" >Create Table</button>
+				
+	</body>
+</html>
